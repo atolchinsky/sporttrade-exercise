@@ -8,6 +8,7 @@ export async function list(ctx: Context) {
     const statsData = StatsModel.query()
       .where({ ...filters })
       .select('*')
+      .limit(1000)
 
     const stats = await statsData
 
