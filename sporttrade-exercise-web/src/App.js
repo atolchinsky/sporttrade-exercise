@@ -106,7 +106,6 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      // const q = { yearID: 2000, lgID: 'NL' };
       const result = await getStats();
       setData(result.data);
     })();
